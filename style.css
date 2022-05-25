@@ -709,6 +709,10 @@ img.Ondaclara {
     align-self: center;
   }
 
+  #about .col-b img {
+    margin-left: -10rem;
+  }
+
   #about img {
     margin-right: 10rem;
   }
