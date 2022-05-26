@@ -459,6 +459,10 @@ body.menu-expanded button path {
   margin-top: 1rem;
 }
 
+#contact .Back {
+  display: none;
+}
+
 footer {
   background: hsla(221, 39%, 11%, 1);
 
