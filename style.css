@@ -681,6 +681,7 @@ img.Ondaclara {
     height: 61.3rem;
     margin-top: 12.9rem;
     margin-left: -7.4rem;
+    display: block;
   }
 
   #home .button {
