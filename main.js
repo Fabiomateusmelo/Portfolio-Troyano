@@ -14,15 +14,18 @@ function onScroll() {
 function activateMenuAtCurrentSection(section) {
   const targetLine = scrollY + innerHeight / 2
 
+  // verificar se a seção passou da linha
+  // quais dados vou precisar?
   const sectionTop = section.offsetTop
   const sectionHeight = section.offsetHeight
-
   const sectionTopReachOrPassedTargetline = targetLine >= sectionTop
 
-  const sectionEndsAt = sectionTop + sectionHeight
+  // verificar se a base está abaixo da linha alvo
 
+  const sectionEndsAt = sectionTop + sectionHeight
   const sectionEndPassedTargetline = sectionEndsAt <= targetLine
 
+  // limites da seção
   const sectionBoundaries =
     sectionTopReachOrPassedTargetline && !sectionEndPassedTargetline
 
@@ -44,7 +47,7 @@ function showNavOnScroll() {
 }
 
 function showBackToTopButtonOnScroll() {
-  if (scrollY > 600) {
+  if (scrollY > 550) {
     backToTopButton.classList.add('show')
   } else {
     backToTopButton.classList.remove('show')
@@ -61,7 +64,7 @@ function closeMenu() {
 
 ScrollReveal({
   origin: 'top',
-  distance: '40px',
+  distance: '30px',
   duration: 700
 }).reveal(`
   #home,
@@ -71,8 +74,8 @@ ScrollReveal({
   #services .card,
   #about header,
   #about .content,
+  #about .col-a .col-b,
   #about img,
   #contact header,
-  #about .col-a .col-b,
   #contact .stats
   `)
