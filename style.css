@@ -501,6 +501,7 @@ footer h4 {
 
 img.Ondaclara {
   display: none;
+  z-index: 10;
 }
 
 /*====== RESPONSIVE========*/
@@ -681,6 +682,7 @@ img.Ondaclara {
     margin-top: 12.9rem;
     margin-left: -7.4rem;
     display: block;
+    z-index: 10;
   }
 
   #home .button {
@@ -690,23 +692,25 @@ img.Ondaclara {
     border: none;
     background-color: var(--primary-color);
     color: white;
-    background: rgb(96,9,240);
-    background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-    7px 7px 20px 0px rgba(0,0,0,.1),
-    4px 4px 5px 0px rgba(0,0,0,.1);
+    background: rgb(96, 9, 240);
+    background: linear-gradient(
+      0deg,
+      rgba(96, 9, 240, 1) 0%,
+      rgba(129, 5, 240, 1) 100%
+    );
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
     outline: none;
     transition: 200ms;
   }
 
-
   #home .col-a .button:hover {
     background-color: var(--brand-dark);
     filter: brightness(1.2);
-    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-    -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.2),
-    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+      -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+      inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
   }
 
   #about {
@@ -721,6 +725,7 @@ img.Ondaclara {
 
   #about .col-a {
     align-self: center;
+    z-index: 20;
   }
 
   #about .col-b img {
@@ -734,6 +739,10 @@ img.Ondaclara {
   #contact .wrapper {
     grid-template-columns: 1fr 50rem;
     grid-template-areas: 'A B';
+  }
+
+  #contact .col-a {
+    z-index: 20;
   }
 
   section#contact {
