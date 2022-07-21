@@ -481,10 +481,9 @@ footer h4 {
   position: fixed;
   bottom: 3rem;
   right: 2rem;
-
+  z-index: 999;
   opacity: 0;
   visibility: hidden;
-
   transform: translateY(100%);
   transition: 500ms;
 }
