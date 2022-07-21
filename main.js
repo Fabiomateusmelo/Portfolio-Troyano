@@ -79,4 +79,4 @@ ScrollReveal({
   #about img,
   #contact header,
   #contact .stats
-  `)
+  `);
