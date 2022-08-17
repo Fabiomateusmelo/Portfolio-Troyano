@@ -51,10 +51,6 @@ body {
   background-color: white;
 }
 
-section {
-  padding: 7rem;
-}
-
 .container {
   padding: 20px;
   display: flex;
@@ -208,6 +204,10 @@ section .content p {
   text-decoration: none;
 
   transition: background 400ms ease;
+}
+
+section {
+  padding: 7rem;
 }
 
 .button:hover {
