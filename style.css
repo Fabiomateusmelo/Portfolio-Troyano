@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: hsl(262, 83%, 58%);
+}
+::-webkit-scrollbar-thumb {
+  background-color: hsl(263, 67%, 35%);
+  border-radius: 8px;
+}
+
 :root {
   --primary-color: hsl(262, 83%, 58%);
   --headline: hsl(221, 39%, 11%);
@@ -139,7 +150,7 @@ img {
 }
 
 section {
-  padding-block: 4rem;
+  padding-block: 1.6rem;
   text-align: left;
 }
 
@@ -149,8 +160,6 @@ section header h4 {
   margin-bottom: 4rem;
   text-transform: uppercase;
   font-weight: 700;
-
-  font-weight: 700;
   font-size: 24px;
 }
 
@@ -159,7 +168,7 @@ section#contact header h4 {
 }
 
 section header p {
-  font-size: 1.8rem;
+  font-size: 1.3em;
   margin-bottom: 2rem;
 }
 
@@ -387,6 +396,7 @@ body.menu-expanded button path {
   text-align: left;
   color: white;
   font-weight: 100;
+  font-size: 1.4em;
 }
 
 #home::before {
@@ -458,10 +468,6 @@ body.menu-expanded button path {
   margin-top: 1rem;
 }
 
-#contact .Back {
-  display: none;
-}
-
 footer {
   background: hsla(221, 39%, 11%, 1);
 
@@ -494,23 +500,19 @@ footer h4 {
   transform: translateY(0);
 }
 
-#home .Onda {
-  display: none;
-}
-
-img.Ondaclara {
-  display: none;
-  z-index: 10;
-}
-
 /*====== RESPONSIVE========*/
 @media (min-width: 1024px) {
   body {
     overflow: auto;
+    font-size: 1.8em;
+  }
+
+  #home .Office {
+    display: none;
   }
 
   .wrapper {
-    width: min(125rem, 100%);
+    width: min(175rem, 100%);
     display: grid;
   }
 
@@ -520,10 +522,6 @@ img.Ondaclara {
 
   .col-b {
     grid-area: B;
-  }
-
-  section {
-    padding-block: 8rem;
   }
 
   nav#navigation .wrapper * {
@@ -549,7 +547,7 @@ img.Ondaclara {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 60%;
+    width: 52%;
   }
 
   nav#navigation .menu ul li a {
@@ -619,19 +617,16 @@ img.Ondaclara {
   }
 
   #home::before {
-    background-color: white;
-    height: calc(96% - var(--nav-height));
-  }
-
-  #home {
-    padding-top: var(--nav-height);
+    display: none;
   }
 
   #home h3 {
     color: black;
     font-size: 2rem;
     font-weight: 700;
-    margin-top: 14rem;
+    margin-top: 12rem;
+    font-size: 1.6em;
+    width: 130%;
   }
 
   #home .wrapper {
@@ -640,48 +635,18 @@ img.Ondaclara {
     grid-template-areas: 'A B';
   }
 
-  #home img {
-    position: absolute;
-  }
-
-  #home .Onda {
-    width: 89.5rem;
-    height: 60rem;
-    margin-top: -7.2rem;
-    margin-left: -22rem;
-    display: block;
-  }
-
-  #home .Office {
-    width: 52rem;
-    height: 30rem;
-    margin-top: 9rem;
-    margin-left: 0;
+  .ondaroxa {
+    background: url('./assets/imgilustrativa.svg') no-repeat right / 620px
+        border-box content-box,
+      url('./assets/bg15.png') no-repeat right top;
   }
 
   #about img {
     position: absolute;
   }
 
-  #about .Ondaclara {
-    width: 135rem;
-    height: 83rem;
-    margin-top: -10rem;
-    margin-left: -7.4rem;
-    display: block;
-  }
-
   #contact img {
     position: absolute;
-  }
-
-  #contact .Back {
-    width: 135rem;
-    height: 61.3rem;
-    margin-top: 12.9rem;
-    margin-left: -7.4rem;
-    display: block;
-    z-index: 10;
   }
 
   #home .button {
@@ -712,10 +677,6 @@ img.Ondaclara {
       inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
   }
 
-  #about {
-    background-color: white;
-  }
-
   #about .wrapper {
     grid-template-columns: 1fr 50rem;
     grid-template-areas: 'A B';
@@ -724,7 +685,6 @@ img.Ondaclara {
 
   #about .col-a {
     align-self: center;
-    z-index: 20;
   }
 
   #about .col-b img {
@@ -738,14 +698,6 @@ img.Ondaclara {
   #contact .wrapper {
     grid-template-columns: 1fr 50rem;
     grid-template-areas: 'A B';
-  }
-
-  #contact .col-a {
-    z-index: 20;
-  }
-
-  section#contact {
-    background-color: white;
   }
 
   .containsl {
