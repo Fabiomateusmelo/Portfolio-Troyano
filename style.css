@@ -152,6 +152,7 @@ img {
 section {
   padding-block: 1.6rem;
   text-align: left;
+  padding: 5rem 0rem;
 }
 
 section header h4 {
@@ -206,9 +207,6 @@ section .content p {
   transition: background 400ms ease;
 }
 
-section {
-  padding: 7rem;
-}
 
 .button:hover {
   background-color: var(--brand-dark);
@@ -513,6 +511,10 @@ footer h4 {
 
   #home .Office {
     display: none;
+  }
+
+  section {
+    padding: 7rem;
   }
 
   .wrapper {
