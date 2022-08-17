@@ -51,6 +51,10 @@ body {
   background-color: white;
 }
 
+section {
+  padding: 6rem;
+}
+
 .container {
   padding: 20px;
   display: flex;
@@ -547,7 +551,7 @@ footer h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 52%;
+    width: 57%;
   }
 
   nav#navigation .menu ul li a {
